@@ -72,7 +72,7 @@ app.get("/", (req, res) => {
 
 // Index
 
-app.get('/saleItem', (req, res) => {
+app.get('/saleitem', (req, res) => {
     SaleItem.find({})
         .then((saleItem) => {
             res.render("amazon/Index", { saleItem })
@@ -82,6 +82,10 @@ app.get('/saleItem', (req, res) => {
         })
 })
 
+//NEW
+app.get('/saleitem/new', (req, res) => {
+    res.render('amazon/New')
+})
 
 ////////////////////////////////////////////
 // Seed route

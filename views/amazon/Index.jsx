@@ -7,6 +7,7 @@ class Index extends React.Component {
         return (
             <DefaultLayout>
                 <div>
+
                     {
                         saleItem.map((item) => (
                             <article>
@@ -18,6 +19,8 @@ class Index extends React.Component {
                             </article>
                         ))
                     }
+                    <h1>Your Index page is working!</h1>
+
                 </div>
             </DefaultLayout>
         )
