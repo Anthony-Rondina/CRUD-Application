@@ -49,6 +49,14 @@
     height: 30vh;
     clear: both;           /* Footer height */
   }
+  .rowDiv{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    position: relative;
+    width: 1000px !important;
+    min-width: 1000px;
+  }
   .top1{
     display: flex;
   }
