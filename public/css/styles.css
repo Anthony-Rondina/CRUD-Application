@@ -30,7 +30,7 @@
     width: 100vw;
   }
   main{
-    min-height: 61.2vh;
+    min-height: 61.4vh;
   }
   footer{
     padding: 50px;
@@ -199,7 +199,7 @@
     padding: 5px;
     display: inline-block
   }
-  .row1Links{
+  /* .row1Links{
     position: absolute;
     left: 78px;
   }
@@ -214,6 +214,13 @@
   .row4Links{
     position: absolute;
     left: 755px;
+  } */
+  footer span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  footer ul {
+    margin-left: -40px;
   }
   footer li {
     left: 10px;

@@ -35,8 +35,8 @@ const { Schema, model } = mongoose; //creates schema and model and connects it t
 // make saleItem schema
 const saleItemSchema = new Schema({
     name: String,
-    color: String,
-    readyToEat: Boolean,
+    description: String,
+    price: Boolean,
 });
 
 // make saleItem model

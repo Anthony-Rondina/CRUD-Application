@@ -15,7 +15,7 @@ class New extends React.Component {
 
                         <form action="/logs" method="POST">
                             Image Location <input type="text" name="img" /><br />
-                            Description<textarea type="textarea" name="Description" ></textarea><br />
+                            Description<textarea type="textarea" name="description" ></textarea><br />
                             Price<input type="text" Price="price" /><br />
                             <input type="submit" value="Engage!" />
                         </form>

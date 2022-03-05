@@ -79,8 +79,8 @@ class DefaultLayout extends React.Component {
                         </main>
                         <footer class="footer">
                             <div class="row1">
-                                <span >Get to know us</span>
                                 <div class="row1Links">
+                                    <span >Get to know us</span>
                                     <ul>
                                         <li>Careers</li>
                                         <li>Blog</li>
@@ -94,8 +94,8 @@ class DefaultLayout extends React.Component {
                                 </div>
                             </div>
                             <div class="row2">
-                                <span >Make money with us</span>
                                 <div class="row2Links">
+                                    <span >Make money with us</span>
                                     <ul>
                                         <li>Careers</li>
                                         <li>Blog</li>
@@ -109,8 +109,8 @@ class DefaultLayout extends React.Component {
                                 </div>
                             </div>
                             <div class="row3">
-                                <span >Amazon Payment Products</span>
                                 <div class="row3Links">
+                                    <span >Amazon Payment Products</span>
                                     <ul>
                                         <li>Careers</li>
                                         <li>Blog</li>
@@ -124,8 +124,8 @@ class DefaultLayout extends React.Component {
                                 </div>
                             </div>
                             <div class="row4">
-                                <span >Let us help you</span>
                                 <div class="row4Links">
+                                    <span >Let us help you</span>
                                     <ul>
                                         <li>Careers</li>
                                         <li>Blog</li>
