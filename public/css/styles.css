@@ -1,0 +1,225 @@
+* { 
+    box-sizing: border-box; 
+  } 
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 30vh;    /* Footer height */
+  }
+  html { 
+    width: 100%; 
+    min-height: 100%; 
+  } 
+  
+  body { 
+    width: inherit; 
+    min-height: inherit; 
+    margin: 0; 
+    padding: 0; 
+  }
+  body{
+    margin:0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    max-height: 130px;
+    width: 100vw;
+  }
+  footer{
+    padding: 50px;
+    color: white;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: #252f3d;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;            /* Footer height */
+    
+  }
+  .top1{
+    display: flex;
+  }
+  .top3 {
+    display: flex;
+  }
+  .topHalf {
+    background-color: #151920;
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    /* justify-content: space-between; */
+  }
+  .bar:hover {
+    cursor: pointer;
+    border: white solid 1px;
+  }
+  .amazonLogo{
+    max-width: 130px;
+    height: 50px;
+    padding: 5px;
+  }
+  .TopHalfItem2{
+    color: white;
+    display: flex;
+    font-size: .8em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .helloSelect > span {
+    text-align: left;
+  }
+  .allButtonDiv{
+    display: flex;
+    align-items: flex-end;
+  }
+  .topHalfItem3{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 15px;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+  }
+  .topHalfItem3 > input{
+    width: 100%;
+    margin-top: 5px
+  }
+  .allButton{
+    cursor: pointer;
+    width: 60px;
+    height: 40px; 
+    margin-right: -2px;
+    /* max-height: 38px; */
+    border-radius: 10% 0% 0% 10%;
+    background-color: lightgrey;
+  }
+  .topInput {
+    font-size: 1.2em;
+    height: 38px;
+    max-height: 38px;
+    min-width: 200px;
+    max-width: 100%;
+  }
+  .magnifyingGlass {
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 38px; 
+    margin-top: 5px;
+    /* max-height: 38px; */
+    border-radius: 0% 5% 5% 0%;
+    background-color: orange;
+  }
+  
+  .topHalfItem4{
+    display: flex;
+    font-size: 1.8em;
+    cursor: pointer;
+    width: 40px;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    /* border: white solid 1px; */
+  }
+  .topHalfItem5{
+    padding: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    min-width: 120px;
+    max-width: 120px;
+  }
+  .topHalfItem6{
+    padding: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 70px;
+    max-width: 70px;
+    min-width: 70px;
+    font-size: .8em;
+  }
+  .topHalfItem7{
+    padding: 5px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    justify-content: fl;
+    width: 64px;
+    max-width: 64px;
+    min-width: 64px;
+    /* min-width: 70px; */
+  }
+  .cartIcon {
+    font-size: 2em;
+  }
+  .bottomHalf{
+    background-color: #252e3c;
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    color: white;
+  }
+  .bottomHalf > ul > li {
+    margin-top: 10px;
+    padding: 5px;
+    display: inline-block
+  }
+  .row1Links{
+    position: absolute;
+    left: 78px;
+  }
+  .row2Links{
+    position: absolute;
+    left: 260px;
+  }
+  .row3Links{
+    position: absolute;
+    left: 485px;
+  }
+  .row4Links{
+    position: absolute;
+    left: 755px;
+  }
+  footer li {
+    left: 10px;
+    list-style-type: none;
+    line-height: 30px;
+    font-size: .8em;
+  }
+  footer li:hover{
+    text-decoration: underline;
+    color: orange;
+    cursor: pointer;
+  }
+  
+  
+  
