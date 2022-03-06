@@ -1,7 +1,7 @@
 const React = require('react')
 class DefaultLayout extends React.Component {
     render() {
-        const { saleItem } = this.props // equal to const saleItem = this.props.saleItem
+        const { outdoorItem } = this.props // equal to const saleItem = this.props.saleItem
         return (
             <html lang='en'>
                 <head>
@@ -21,55 +21,55 @@ class DefaultLayout extends React.Component {
                     {/* <script src="/app.js" defer></script> */}
                 </head>
                 <body>
-                    <div class="pageContainer">
-                        <div class="contentWrap">
+                    <div className="pageContainer">
+                        <div className="contentWrap">
                             <header>
-                                <div class="topHalf">
-                                    <div class="top1">
-                                        <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" class="amazonLogo bar" />
-                                        <div class="TopHalfItem2 bar">
+                                <div className="topHalf">
+                                    <div className="top1">
+                                        <a className="amazonLogo bar" href="http://localhost:8000/"></a>
+                                        <div className="TopHalfItem2 bar">
                                             📍
-                                            <div class="helloSelect">
-                                                <span class="hello">Hello</span>
+                                            <div className="helloSelect">
+                                                <span className="hello">Hello</span>
                                                 <br />
-                                                <span class="selectAddress">Select your address</span>
+                                                <span className="selectAddress">Select your address</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="topHalfItem3">
-                                        <div class="allButtonDiv">
-                                            <button class="allButton">All</button>
+                                    <div className="topHalfItem3">
+                                        <div className="allButtonDiv">
+                                            <button className="allButton">All</button>
                                         </div>
-                                        <input type="text" value="search" class="topInput" />
-                                        <div class="magnifyingGlass">🔍</div>
+                                        <input type="text" placeholder="search" className="topInput" />
+                                        <a href="http://localhost:8000/outdooritem" className="magnifyingGlass">🔍</a>
                                     </div>
-                                    <div class="top3">
-                                        <div class="topHalfItem4 bar">
-                                            <span class="flag">🇺🇸</span>
+                                    <div className="top3">
+                                        <div className="topHalfItem4 bar">
+                                            <span className="flag">🇺🇸</span>
                                         </div>
-                                        <div class="topHalfItem5 bar">
-                                            <a class="hello2">Hello, Sign in</a>
+                                        <div className="topHalfItem5 bar">
+                                            <a className="hello2">Hello, Sign in</a>
                                         </div>
-                                        <div class="topHalfItem6 bar">
-                                            <span class="returns">Returns</span>
+                                        <div className="topHalfItem6 bar">
+                                            <span className="returns">Returns</span>
                                             <span
-                                                class="orders">/ Orders</span>
+                                                className="orders">/ Orders</span>
                                         </div>
-                                        <div class="topHalfItem7 bar">
-                                            <span class="cartIcon">🛒</span>
-                                            <span class="cart"> Cart</span>
+                                        <div className="topHalfItem7 bar">
+                                            <span className="cartIcon">🛒</span>
+                                            <span className="cart"> Cart</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bottomHalf">
+                                <div className="bottomHalf">
                                     <ul>
-                                        <li class="bar">All</li>
-                                        <li class="bar">Best Sellers</li>
-                                        <li class="bar">Amazon Basics</li>
-                                        <li class="bar">New Releases</li>
-                                        <li class="bar">Customer Service</li>
-                                        <li class="bar">Today's Deals</li>
-                                        <li class="bar">Prime</li>
+                                        <li className="bar">All</li>
+                                        <li className="bar">Best Sellers</li>
+                                        <li className="bar">Amazon Basics</li>
+                                        <li className="bar">New Releases</li>
+                                        <li className="bar">Customer Service</li>
+                                        <li className="bar">Today's Deals</li>
+                                        <li className="bar">Prime</li>
                                     </ul>
                                 </div>
                             </header>
@@ -77,10 +77,10 @@ class DefaultLayout extends React.Component {
                         <main>
                             {this.props.children}
                         </main>
-                        <footer class="footer">
+                        <footer className="footer">
                             <div className="rowDiv">
-                                <div class="row1">
-                                    <div class="row1Links">
+                                <div className="row1">
+                                    <div className="row1Links">
                                         <span >Get to know us</span>
                                         <ul>
                                             <li>Careers</li>
@@ -94,8 +94,8 @@ class DefaultLayout extends React.Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="row2">
-                                    <div class="row2Links">
+                                <div className="row2">
+                                    <div className="row2Links">
                                         <span >Make money with us</span>
                                         <ul>
                                             <li>Careers</li>
@@ -109,8 +109,8 @@ class DefaultLayout extends React.Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="row3">
-                                    <div class="row3Links">
+                                <div className="row3">
+                                    <div className="row3Links">
                                         <span >Amazon Payment Products</span>
                                         <ul>
                                             <li>Careers</li>
@@ -124,8 +124,8 @@ class DefaultLayout extends React.Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="row4">
-                                    <div class="row4Links">
+                                <div className="row4">
+                                    <div className="row4Links">
                                         <span >Let us help you</span>
                                         <ul>
                                             <li>Careers</li>

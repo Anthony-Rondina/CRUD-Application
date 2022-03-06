@@ -29,7 +29,11 @@
     max-height: 130px;
     width: 100vw;
   }
+  .showMainWrapper{
+    margin-top: 25px;
+  }
   main{
+    margin-top: -5px;
     min-height: 61.4vh;
   }
   footer{
@@ -79,9 +83,59 @@
     border: white solid 1px;
   }
   .amazonLogo{
+    text-decoration: none !important;
+    background-image: url(https://pngimg.com/uploads/amazon/amazon_PNG11.png);
+    background-repeat: no-repeat;
     max-width: 130px;
+    width: 130px;
     height: 50px;
+    background-size: 130px ;
+    padding: 15px;
+  }
+  .results{
+    display: inline;
+  }
+  /* .displayResults > span {
+    margin-left: 25px;
+  } */
+  /* .displayResults > .btn {
+    margin-left: 80px;
+  } */
+  .indexRightSplit{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: red solid 1px; */
+    width: 60vw;
+    max-width: 60vw;
+    min-width: 60vw;
+  }
+  .displayResults{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: red solid 2px; */
     padding: 5px;
+    margin-bottom: 15px;
+    width: 1200px;
+    min-width: 1200px; 
+  }
+  .outerContainer{
+    width: 75vw;
+  }
+  .homeBackground{
+    background-color: #f0eeed;
+  }
+  /* .carousel-inner{
+    height: 20vh !important;
+  } */
+  .outMost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
   .TopHalfItem2{
     color: white;
@@ -92,6 +146,76 @@
     justify-content: center;
     min-width: 150px;
     max-width: 150px;
+  }
+  .indexOuterSplit{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    /* border: solid green 2px; */
+    /* width: 50vw; */
+    /* max-width: 50vw; */
+    /* border: solid red 1px; */
+  }
+  .showOutterWrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .showImage{
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .showItemInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+  .showItemInfo{
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .showEdit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .showButtonDiv{
+    background-color: rgb(203, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    border: 0;
+    border-bottom: solid;
+  }
+  .editOuterWrapper{
+    margin-top: 50px;
+    height: 50vh;
+    /* border: 4px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+  }
+  .showButtonSmallDiv{
+    display: flex;
+    width: 50vh;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexInnerSplit {
+    width: 300px;
+    min-width: 300px;
+    background-color: blue;
+    /* border: green solid 1px; */
   }
   .helloSelect > span {
     text-align: left;
@@ -128,7 +252,9 @@
     min-width: 200px;
     max-width: 100%;
   }
+ 
   .magnifyingGlass {
+    text-decoration: none !important;
     cursor: pointer;
     display:flex;
     justify-content: center;
