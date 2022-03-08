@@ -40,7 +40,7 @@ class Show extends React.Component {
                                 </div>
                                 <br />
                                 <p>
-                            {outdoorItem.prime ? 'Get it delivered faster with Prime!' : 'Not eligible for Prime'}
+                            {outdoorItem.prime ? 'Eligible for Prime!' : 'Not eligible for Prime'}
                             </p>      
                                 <div>
                                     <span>Get </span><span className="bold">Fast, Free Shipping </span> <span>with</span> <a href="">Amazon Prime</a> <span> & </span> <a href="">FREE Returns</a>
