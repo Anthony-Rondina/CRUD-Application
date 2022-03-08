@@ -37,21 +37,21 @@ class Index extends React.Component {
                     <br />
                     <br />
                     <p class="bold">Department</p>
-                    <span>Games & Accessories</span>
+                    <span>Helmets & Protective Wear</span>
                     <br />
-                    <span>Board Games</span>
+                    <span>Fitness</span>
                     <br />
-                    <span>Dedicated Deck Card Games</span>
+                    <span>Water Sports</span>
                     <br />
-                    <span>Dice Games</span>
+                    <span>Disc Golf</span>
                     <br />
-                    <span>Learning & Education Toys</span>
+                    <span>Electronics</span>
                     <br />
                     <span>Sports & Outdoor Play Toys</span>
                     <br />
-                    <span>Industrial & Scientific</span>
+                    <span>Educational Equipment</span>
                     <br />
-                    <span>Kids' Electronics</span>
+                    <span>Kids' Section</span>
                     <br />
                     <br />
                     <p class="bold">Customer Review</p>
@@ -67,29 +67,29 @@ class Index extends React.Component {
                         <br />
                     </div>
                     <br />
-                    <p className="bold">Toy Character</p>
-                    <span>Mickey Mouse</span>
-                    <br />
-                    <span>Animal Planet</span>
-                    <br />
-                    <span>Barbie</span>
-                    <br />
-                    <span>Harry Potter</span>
-                    <br />
-                    <span>Nerf</span>
-                    <br />
-                    <span>Disney Princess</span>
-                    <br />
+                    <p className="bold">Search By Character</p>
                     <span>Marvel</span>
+                    <br />
+                    <span>Tom Brady</span>
+                    <br />
+                    <span>Micheal Jordan</span>
+                    <br />
+                    <span>Scottie Pippin</span>
+                    <br />
+                    <span>Magic Johnson</span>
+                    <br />
+                    <span>Iron Man</span>
+                    <br />
+                    <span>Hulk</span>
                     <br /><br />
                     <p className="bold">Brand</p>
-                    <input type="checkbox" /> <span> Hasbro Gaming</span> <br />
-                    <input type="checkbox" /> <span> Ravensburger</span> <br />
-                    <input type="checkbox" /> <span> Exploding Kittens</span> <br />
-                    <input type="checkbox" /> <span> Monopoly</span> <br />
-                    <input type="checkbox" /> <span> Thames & Kosmos</span> <br />
-                    <input type="checkbox" /> <span> Magic the Gathering</span> <br />
-                    <input type="checkbox" /> <span> Hunt a Killer</span> <br />
+                    <input type="checkbox" /> <span> Nike</span> <br />
+                    <input type="checkbox" /> <span> Adidas</span> <br />
+                    <input type="checkbox" /> <span> Target</span> <br />
+                    <input type="checkbox" /> <span> Nerf</span> <br />
+                    <input type="checkbox" /> <span> Hasbro</span> <br />
+                    <input type="checkbox" /> <span> Steam</span> <br />
+                    <input type="checkbox" /> <span> NFL</span> <br />
                     <br />
                     <p className="bold">Toy & Game Price</p>
                     <span>$25 to $50</span> <br />
