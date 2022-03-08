@@ -15,6 +15,7 @@ const indoorItemSchema = new Schema({
     title: String,
     price: Number,
     description: String,
+    prime: Boolean,
 });
 
 // make fruit model

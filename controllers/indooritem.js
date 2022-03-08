@@ -64,6 +64,8 @@ router.delete('/:id', (req, res) => {
 router.put('/:id', (req, res) => {
     const { id } = req.params;
     //New: true means it returns the NEW document with changes
+    // massage data
+    req.body.prime = req.body.prime === "on" ? true : false
     indoorItem.findByIdAndUpdate(id, req.body, { new: true })
         .then(() => {
             res.redirect(`/indooritem/${id}`)
@@ -76,6 +78,7 @@ router.put('/:id', (req, res) => {
 // CREATE
 router.post("/", (req, res) => {
     // create the New saleItem
+    req.body.prime = req.body.prime === "on" ? true : false
     indoorItem.create(req.body)
         .then((saleItem) => {
             // redirect user to Index page if successfully created item

@@ -22,13 +22,46 @@ class Show extends React.Component {
                         </div>
                         <div className="showItemInfo">
                             <h2>{`${indoorItem.title}`}</h2>
+                            <hr />
+                            <div class="showMidPrice">
+                                <span>List Price:</span>
+                                <span class="price">{` $${indoorItem.price}`}</span>
+                            </div>
+                            <br />
                             <p>{`${indoorItem.description}`}</p>
+
                         </div>
-                        <article class="showEdit">
+                        <div>
+                            <article class="showEdit">
+                                <div className="showTopBlock">
+                                    <div className="priceDisplay">
+                                        <div><input type="radio" defaultChecked /> <span class='bold'>Buy new:</span></div>
+                                        <span class="price">{`$${indoorItem.price}`}</span>
+                                    </div>
+                                    <br />
+                                    <div>
+                                        <span>Get </span><span className="bold">Fast, Free Shipping </span> <span>with</span> <a href="">Amazon Prime</a> <span> & </span> <a href="">FREE Returns</a>
+                                    </div>
+                                    <br />
+                                    <h2 className="green">In stock</h2>
+                                    <br />
+                                    <button className="btn btn-warning yellow roundButton">Add to Card</button>
+                                    <br />
+                                    <button className="btn btn-warning orange roundButton">Buy Now</button>
+                                </div>
 
-                            <h3>Price: {`$${indoorItem.price}`}</h3>
+                            </article>
+                            <div className="used">
+                                <div>
+                                    <div>
+                                        <input type="radio" /> <span class='bold'>Save with Used - Very Good</span>
+                                    </div>
+                                    <br />
+                                    <span>Free Delivery: Sunday, March 13th on orders over $25.00 shipped by Amazon.</span>
 
-                        </article>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </DefaultLayout>

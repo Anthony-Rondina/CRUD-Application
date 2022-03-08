@@ -5,55 +5,63 @@ class Edit extends React.Component {
     render() {
         return (
             <DefaultLayout>
-                <div className="editOuterWrapper">
-                    <form action="/outdooritem" method="post">
-                        <fieldset>
-                            <div className="editName">
-                                <legend>Create outdoor Item</legend>
-                                <label>
-                                    Link:<input
-                                        type="text"
-                                        name="img"
-                                        placeholder="image link"
-                                    />
-                                </label>
+                <div className="edit-outmost-wrapper">
+                    <div className="editOuterWrapper">
+                        <form action="/outdoorItem" method="post">
+                            <fieldset>
+                                <div className="editName">
+                                    <label>
+                                        Link:<input
+                                            type="text"
+                                            name="img"
+                                            placeholder="image link"
+
+                                        />
+                                    </label>
+                                </div>
+                                <div className="editTitle">
+                                    <label>
+                                        Title:<input
+                                            type="text"
+                                            name="title"
+                                            placeholder=" item title"
+
+                                        />
+                                    </label>
+                                </div>
+                                <div className="editPrice">
+                                    <label>
+                                        Price:<input
+                                            type="number"
+                                            name="price"
+                                            placeholder=" item price"
+
+                                        />
+                                    </label>
+                                </div>
+                                <div className="editDescription">
+                                    <label>
+                                        <p>Description:</p>
+                                        <textarea
+                                            type="text"
+                                            name="description"
+                                            placeholder=" item description"
+
+                                        />
+                                    </label>
+                                </div>
+                                <div className="prime">
+                                    <label>
+                                        Prime Eligible: <input type="checkbox" name="prime" />
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <div className="showButtons">
+                                <a href="/outdooritem/" class="btn btn-secondary">Cancel</a>
+                                <input class="btn btn-warning" type="submit" value={`Save and Finish`} />
                             </div>
-                            <div className="editTitle">
-                                <label>
-                                    Title:<input
-                                        type="text"
-                                        name="title"
-                                        placeholder=" item title"
-                                    />
-                                </label>
-                            </div>
-                            <div className="editPrice">
-                                <label>
-                                    Price:<input
-                                        type="number"
-                                        name="price"
-                                        placeholder=" item price"
-                                    />
-                                </label>
-                            </div>
-                            <div className="editDescription">
-                                <label>
-                                    Description:<input
-                                        type="textarea"
-                                        name="description"
-                                        placeholder=" item description"
-                                    />
-                                </label>
-                            </div>
-                            <div className="prime">
-                                <label> Prime Eligible:<input type="checkbox" name="prime" /> </label>
-                            </div>
-                        </fieldset>
-                        <div className="showButtons">
-                            <a href={`http://localhost:8000/outdooritem`} className="btn btn-secondary">Cancel</a>
-                            <input className="btn btn-warning" type="submit" value={`Save and Finish`} />
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </DefaultLayout>
         )
