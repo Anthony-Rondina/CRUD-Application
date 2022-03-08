@@ -109,8 +109,12 @@
     width: 900px;
     flex-wrap: wrap;
   }
+  .showImage{
+    size: 60%;
+  }
   .card-img-top {
-    size: 100px;
+    height: 300px;
+    width: 286px !important;
   }
   textarea {
     width: 500px;
@@ -284,9 +288,14 @@
     text-decoration: underline;
     
   }
-  /* .card-text{
-    height: 100px;
-  } */
+  .card-text{
+    text-overflow: ellipsis;
+    height: 200px;
+
+    /* Required for text-overflow to do anything */
+    white-space: normal;
+    overflow: hidden;
+  }
   .priceSearch{
     display: flex;
     width: 50px;

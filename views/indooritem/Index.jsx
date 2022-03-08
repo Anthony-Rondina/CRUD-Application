@@ -24,11 +24,11 @@ class Index extends React.Component {
                         <span class="bold">Eligible for Free Shipping</span>
                         <br /> <br />
                         <input type="checkbox" />
-                        <span>Free Shipping by Amazon. All customers get FREE Shipping on orders over $25 shipped by Amazon</span>
+                        <span> Free Shipping by Amazon. All customers get FREE Shipping on orders over $25 shipped by Amazon</span>
                         <br />
                         <br />
                         <p class="bold">Deliver Day</p>
-                        <input type="checkbox" />Get it by Tomorrow
+                        <input type="checkbox" /> Get it by Tomorrow
                         <br />
                         <br />
                         <p class="bold">Department</p>
@@ -108,7 +108,7 @@ class Index extends React.Component {
                                         <div className="card-body">
                                             <h5 className="card-title">{`${item.title}`}</h5>
                                             <h5 className="card-title">{`$${item.price}`}</h5>
-                                            {item.prime ? 'Get it delivered faster with Prime' : 'Not eligible for Prime'}
+                                            {item.prime ? 'Get it delivered faster with Prime!' : 'Not eligible for Prime'}
                                             <p></p>
                                             <p className="card-text">{`${item.description}`}</p>
                                             <a href={`/indooritem/${item._id}`} className="btn btn-primary">Go to listing</a>

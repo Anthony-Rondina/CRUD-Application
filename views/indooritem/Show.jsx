@@ -18,7 +18,7 @@ class Show extends React.Component {
                 <div className="showMainWrapper">
                     <div class="showOutterWrapper">
                         <div className="showImage">
-                            <img className="card-img-top" src={`${indoorItem.img}`} alt="Card image cap" />
+                            <img className="showImage" src={`${indoorItem.img}`} alt="Card image cap" />
                         </div>
                         <div className="showItemInfo">
                             <h2>{`${indoorItem.title}`}</h2>
@@ -39,13 +39,16 @@ class Show extends React.Component {
                                         <span class="price">{`$${indoorItem.price}`}</span>
                                     </div>
                                     <br />
+                                    <p>
+                                        {indoorItem.prime ? 'Get it delivered faster with Prime!' : 'Not eligible for Prime'}
+                                    </p>
                                     <div>
                                         <span>Get </span><span className="bold">Fast, Free Shipping </span> <span>with</span> <a href="">Amazon Prime</a> <span> & </span> <a href="">FREE Returns</a>
                                     </div>
                                     <br />
                                     <h2 className="green">In stock</h2>
                                     <br />
-                                    <button className="btn btn-warning yellow roundButton">Add to Card</button>
+                                    <button className="btn btn-warning yellow roundButton">Add to Cart</button>
                                     <br />
                                     <button className="btn btn-warning orange roundButton">Buy Now</button>
                                 </div>
