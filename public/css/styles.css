@@ -124,12 +124,12 @@
   }
   .displayResults{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     /* border: red solid 2px; */
     padding: 5px;
     margin-bottom: 15px;
-    width: 1200px;
+    width: 1290px;
     min-width: 1200px; 
   }
   .outerContainer{

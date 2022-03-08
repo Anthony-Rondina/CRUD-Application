@@ -12,7 +12,7 @@ class Index extends React.Component {
                     <span className='relatedSearch'>Related search: </span>
                     <a href="http://localhost:8000/indooritem">"Indoor Games"</a>
                 </div>
-                <a href="http://localhost:8000/outdoorItem/new" type="button" className="btn btn-primary">Create Listing for a Game</a>
+                <a href="http://localhost:8000/outdoorItem/new" type="button" className="btn btn-primary">Create Listing</a>
             </div>
             <div className='indexOuterSplit'>
                 <div className="indexInnerSplit">
