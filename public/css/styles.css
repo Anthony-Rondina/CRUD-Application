@@ -325,6 +325,8 @@
     margin-top: 5px;
     margin-right: 15px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     flex-direction: row;
   }
@@ -335,8 +337,11 @@
   .allButton{
     cursor: pointer;
     width: 60px;
-    height: 40px; 
+    height: 36.5px; 
     margin-right: -2px;
+    border-top: none;
+    border-bottom: none;
+    margin-top: 3.5px;
     /* max-height: 38px; */
     border-radius: 10% 0% 0% 10%;
     background-color: lightgrey;
@@ -359,8 +364,8 @@
     width: 50px;
     min-width: 50px;
     max-width: 50px;
-    height: 38px; 
-    margin-top: 5px;
+    height: 37px; 
+    margin-top: 4px;
     /* max-height: 38px; */
     border-radius: 0% 5% 5% 0%;
     background-color: orange;
