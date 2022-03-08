@@ -1,7 +1,14 @@
 const React = require('react')
 const DefaultLayout = require('../Default')
+let total = 0
 
-
+const totalEntries = (number) => {
+    
+    number.forEach(item => {
+        total +=1
+    });
+    return total
+}
 class Index extends React.Component {
     render() {
         let itemCount = 0
@@ -12,7 +19,7 @@ class Index extends React.Component {
         return (
             <DefaultLayout>
                 <div className="displayResults">
-                    <h1 className='results'>Displaying results for "Indoor Games"</h1>
+                    <h1 className='results'>Displaying <span>{totalEntries(indoorItem)}</span> results for "Indoor Games"</h1>
                     <div>
                         <span className='relatedSearch'>Related search: </span>
                         <a href="http://localhost:8000/outdooritem">"Outdoor Games"</a>
