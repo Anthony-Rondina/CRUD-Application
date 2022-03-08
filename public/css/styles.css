@@ -18,6 +18,7 @@
     min-height: inherit; 
     margin: 0; 
     padding: 0; 
+    background-color: #f9f9f9;
   }
   body{
     margin:0;
@@ -33,6 +34,7 @@
     margin-top: 25px;
   }
   main{
+    background-color: #f9f9f9;
     margin-top: -5px;
     min-height: 61.4vh;
   }
@@ -134,7 +136,7 @@
     width: 75vw;
   }
   .homeBackground{
-    background-color: #f0eeed;
+    background-color: #f9f9f9;
   }
   /* .carousel-inner{
     height: 20vh !important;
