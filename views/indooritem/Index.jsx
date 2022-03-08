@@ -18,13 +18,15 @@ class Index extends React.Component {
         const { indoorItem } = this.props
         return (
             <DefaultLayout>
-                <div className="displayResults">
-                    <h1 className='results'>Displaying <span>{totalEntries(indoorItem)}</span> results for "Indoor Games"</h1>
-                    <div>
-                        <span className='relatedSearch'>Related search: </span>
-                        <a href="http://localhost:8000/outdooritem">"Outdoor Games"</a>
+                <div className="resultsWrapper">
+                    <div className="displayResults">
+                        <h2 className='results'> Displaying <span>{totalEntries(indoorItem)}</span> results for "Indoor Games"</h2>
+                        <div className='relatedSearch'>
+                            <span >Related search: </span>
+                            <a href="http://localhost:8000/outdooritem">"Outdoor Games"</a>
+                        </div>
+                        <a href="http://localhost:8000/indoorItem/new" type="button" className="btn btn-primary indexbtn">Create Listing</a>
                     </div>
-                    <a href="http://localhost:8000/indooritem/new" type="button" className="btn btn-primary">Create Listing</a>
                 </div>
                 <div className='indexOuterSplit'>
                     <div className="indexInnerSplit">
@@ -115,7 +117,7 @@ class Index extends React.Component {
                                         <div className="card-body">
                                             <h5 className="card-title">{`${item.title}`}</h5>
                                             <h5 className="card-title">{`$${item.price}`}</h5>
-                                            {item.prime ? 'Get it delivered faster with Prime!' : 'Not eligible for Prime'}
+                                            {item.prime ? 'Eligible for Prime!' : 'Not available for Prime'}
                                             <p></p>
                                             <p className="card-text">{`${item.description}`}</p>
                                             <a href={`/indooritem/${item._id}`} className="btn btn-primary">Go to listing</a>

@@ -9,11 +9,12 @@
     padding-bottom: 40vh;    /* Footer height */
   }
   html { 
-    width: 100%; 
+    /* overflow: hidden !important; */
     min-height: 100%; 
   } 
   
   body { 
+    /* overflow: hidden !important; */
     width: inherit; 
     min-height: inherit; 
     margin: 0; 
@@ -45,14 +46,15 @@
     flex-direction: row !important;
     justify-content: space-evenly;
     width: 100vw;
+    min-width: 100vw;
     background-color: #252f3d;
     position: absolute;
     bottom: 0;
-    width: 100%;
     position: relative;
     /* margin-top: 47.1vh; */
   /* negative value of footer height */
-    height: 30vh;
+    height: 30%;
+    min-height: 30%;
     clear: both;           /* Footer height */
   }
   .rowDiv{
@@ -94,14 +96,26 @@
     background-size: 130px;
   }
   .results{
-    display: inline;
+    /* border: solid blue 1px; */
+    /* display: inline-block; */
+    min-width: 600px;
+    width: 600px;
   }
-  /* .displayResults > span {
-    margin-left: 25px;
-  } */
-  /* .displayResults > .btn {
-    margin-left: 80px;
-  } */
+  .resultsWrapper{
+    width: 100%;
+    min-width: 80%;
+    overflow: hidden;
+  }
+  .relatedSearch{
+    display: inline-block;
+    /* border: solid green 1px; */
+    width: 250px;
+    min-width: 250px;
+  }
+  .indexbtn{
+    width: 150px !important;
+    min-width: 150px !important;
+  }
   .indexRightSplit{
     padding: 15px;
     display: flex;
@@ -128,9 +142,9 @@
     align-items: center;
     /* border: red solid 2px; */
     padding: 5px;
-    margin-bottom: 15px;
-    width: 1290px;
-    min-width: 1200px; 
+    /* margin-bottom: 15px; */
+    /* width: 100%; */
+    /* min-width: 80%;  */
   }
   .outerContainer{
     width: 75vw;
@@ -422,14 +436,24 @@
   }
   .bottomHalf{
     background-color: #252e3c;
-    width: 100vw;
+    width: 100%;
+    /* min-width: 800px; */
+    /* border: solid white 1px; */
+    overflow: hidden !important;
     height: 55px;
+    flex-wrap:nowrap;
     display: flex;
     flex-direction: row;
     align-items: center !important;
     color: white;
   }
-  .bottomHalf > ul > li {
+  .bottom-half-box{
+    width: 700px;
+    min-width: 700px;
+    /* border: solid yellow 1px; */
+    overflow: hidden !important;
+  }
+  .bottom-half-box > ul > li {
     margin-top: 10px;
     padding: 5px;
     display: inline-block

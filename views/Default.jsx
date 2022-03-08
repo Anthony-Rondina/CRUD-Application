@@ -62,15 +62,17 @@ class DefaultLayout extends React.Component {
                                     </div>
                                 </div>
                                 <div className="bottomHalf">
-                                    <ul>
-                                        <li className="bar">All</li>
-                                        <li className="bar">Best Sellers</li>
-                                        <li className="bar">Amazon Basics</li>
-                                        <li className="bar">New Releases</li>
-                                        <li className="bar">Customer Service</li>
-                                        <li className="bar">Today's Deals</li>
-                                        <li className="bar">Prime</li>
-                                    </ul>
+                                    <div className="bottom-half-box">
+                                        <ul>
+                                            <li className="bar">All</li>
+                                            <li className="bar">Best Sellers</li>
+                                            <li className="bar">Amazon Basics</li>
+                                            <li className="bar">New Releases</li>
+                                            <li className="bar">Customer Service</li>
+                                            <li className="bar">Today's Deals</li>
+                                            <li className="bar">Prime</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </header>
                         </div>
