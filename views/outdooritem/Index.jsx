@@ -9,6 +9,9 @@ const totalEntries = (number) => {
         total += 1
     });
     return total
+    setTimeout(() => {
+        total = 0
+    }, 1000);
 }
 
 class Index extends React.Component {
