@@ -7,8 +7,9 @@ const methodOverride = require("method-override");
 const path = require("path");
 const outdoorItemController = require('./controllers/outdoorItem')
 const indoorItemController = require('./controllers/indoorItem')
-
-
+const UserRouter = require("./controllers/user");
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
 /////////////////////////////////////////////////
 // Create our Express Application Object Bind Liquid Templating Engine
 /////////////////////////////////////////////////
@@ -23,7 +24,15 @@ app.use(morgan("tiny")); //logging
 app.use(express.urlencoded({ extended: true })); // parse urlencoded request bodies MUST BE ABOVE METHOD OVERRIDE
 app.use(methodOverride("_method")); // override for put and delete requests from forms
 app.use(express.static("public")); // serve files from public statically
-
+app.use(
+    session({
+        secret: process.env.SECRET,
+        store: MongoStore.create({ mongoUrl: process.env.DATABASE_URL }),
+        saveUninitialized: true,
+        resave: false,
+    })
+);
+app.use('/user', UserRouter)
 app.use('/outdooritem', outdoorItemController)
 app.use('/indooritem', indoorItemController)
 app.get("/", (req, res) => {

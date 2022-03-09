@@ -12,7 +12,28 @@
     /* overflow: hidden !important; */
     min-height: 100%; 
   } 
-  
+  .signMainWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .userTopText{
+    text-align: left;
+    width: 100%;
+    /* border: solid red 1px; */
+  }
+  .signupOuterWraper{
+    margin-top: 50px;
+padding: 15px;
+    border: black solid .5px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+  }
   body { 
     /* overflow-x: hidden; */
     width: 100vw;
@@ -81,6 +102,13 @@
   .bar:hover {
     cursor: pointer;
     border: white solid 1px;
+  }
+  .loginImg{
+    width: 120px;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: -50px;
+    /* background-color: darkblue; */
   }
   .amazonLogo{
     text-decoration: none !important;
@@ -228,6 +256,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  .already{
+    text-align: left;
+    font-size: 14px;
+  }
   .priceDisplay{
     display: flex;
     justify-content: space-between;
@@ -263,6 +295,31 @@
   input {
     border: 0;
     border-bottom: solid;
+  }
+  .terms{
+    font-size: 13px;
+  }
+fieldset > label{
+    width: 100% !important;
+  }
+  label > input {
+    width: 100%;
+    border: solid black 1px;
+  }
+  fieldset > input {
+    background-color: gold;
+    border: 0;
+    width: 100%;
+  }
+  .bottomInfo{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+    width: 380px;
+  }
+  .copyright{
+    font-size: 12;
   }
   .edit-outmost-wrapper{
     width: 100%;
@@ -317,6 +374,15 @@
   }
 .bold{
   font-weight: bold;
+}
+.newToAmazon{
+  display: flex;
+  width: 34%;
+ white-space: nowrap;
+}
+.newToAmazonP{
+  font-size: 14px;
+  margin-top: 4px;
 }
   .star-background{
     color: white;
@@ -434,6 +500,7 @@
   .bottomHalf{
     background-color: #252e3c;
     width: 100%;
+    min-width: 100%;
     /* min-width: 800px; */
     /* border: solid white 1px; */
     overflow: hidden !important;
@@ -442,12 +509,15 @@
     display: flex;
     flex-direction: row;
     align-items: center !important;
+white-space: nowrap;
     color: white;
   }
+  .logoutButton{
+    margin-right: 25px;
+  }
   .bottom-half-box{
-    width: 700px;
-    min-width: 700px;
-    /* border: solid yellow 1px; */
+    width: 100%;
+    
     overflow: hidden !important;
   }
   .bottom-half-box > ul > li {

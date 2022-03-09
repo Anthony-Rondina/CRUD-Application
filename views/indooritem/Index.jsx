@@ -28,7 +28,7 @@ class Index extends React.Component {
                             <span >Related search: </span>
                             <a href="/outdooritem">"Outdoor Games"</a>
                         </div>
-                        <a href="/indooritem/new" type="button" className="btn btn-primary">Create Listing</a>
+                        <a href="/indooritem/new" type="button" className="btn btn-primary indexbtn">Create Listing</a>
                     </div>
                 </div>
                 <div className='indexOuterSplit'>

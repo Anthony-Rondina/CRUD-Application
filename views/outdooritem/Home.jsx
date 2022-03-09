@@ -8,7 +8,8 @@ class Index extends React.Component {
                 <div className="homeBackground">
                     <div className="outMost">
                         <h1>Your Home page is working!</h1>
-                        <div className='outerContainer'>
+                        <div
+                            className='outerContainer'>
                             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">

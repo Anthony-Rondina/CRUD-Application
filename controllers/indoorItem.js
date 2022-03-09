@@ -4,6 +4,15 @@ const indoorItem = require("../models/indooritem");
 // Create Router
 const router = express.Router();
 
+// Authorization Middleware
+router.use((req, res, next) => {
+    if (req.session.loggedIn) {
+      next();
+    } else {
+      res.redirect("/user/login");
+    }
+  });
+
 ////////////////////////////////////////////
 // Routes
 ////////////////////////////////////////////
