@@ -111,7 +111,7 @@ class Index extends React.Component {
 
                                 <article className='productsList'>
                                     <div className="card" style={{ width: 18 + "rem;" }}>
-                                        <img className="card-img-top" src={`${item.img}`} alt="Card image cap" />
+                                        <a href={`/outdoorItem/${item._id}`}><img className="card-img-top" src={`${item.img}`} alt="Card image cap" /></a>
                                         <div className="card-body">
                                             <h5 className="card-title">{`${item.title}`}</h5>
                                             <h5 className="card-title">{`$${item.price}`}</h5>

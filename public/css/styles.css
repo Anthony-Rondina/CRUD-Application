@@ -14,7 +14,7 @@
   } 
   
   body { 
-    /* overflow: hidden !important; */
+    overflow-x: hidden;
     width: inherit; 
     min-height: inherit; 
     margin: 0; 
@@ -432,6 +432,7 @@
     /* min-width: 70px; */
   }
   .cartIcon {
+    margin-left: -10px;
     font-size: 2em;
   }
   .bottomHalf{
@@ -492,6 +493,5 @@
     color: orange;
     cursor: pointer;
   }
-  
   
   

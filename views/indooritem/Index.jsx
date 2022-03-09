@@ -3,9 +3,9 @@ const DefaultLayout = require('../Default')
 let total = 0
 
 const totalEntries = (number) => {
-    
+
     number.forEach(item => {
-        total +=1
+        total += 1
     });
     return total
 }
@@ -113,7 +113,7 @@ class Index extends React.Component {
 
                                 <article className='productsList'>
                                     <div className="card" style={{ width: 18 + "rem;" }}>
-                                        <img className="card-img-top" src={`${item.img}`} alt="Card image cap" />
+                                        <a href={`/indooritem/${item._id}`}> <img className="card-img-top" src={`${item.img}`} alt="Card image cap" /></a>
                                         <div className="card-body">
                                             <h5 className="card-title">{`${item.title}`}</h5>
                                             <h5 className="card-title">{`$${item.price}`}</h5>
