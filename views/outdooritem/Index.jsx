@@ -8,10 +8,10 @@ const totalEntries = (number) => {
     number.forEach(item => {
         total += 1
     });
-    return total
     setTimeout(() => {
         total = 0
     }, 1000);
+    return total
 }
 
 class Index extends React.Component {
