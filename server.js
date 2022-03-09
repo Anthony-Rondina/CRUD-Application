@@ -32,9 +32,9 @@ app.use(
         resave: false,
     })
 );
-app.use('/user', UserRouter)
 app.use('/outdooritem', outdoorItemController)
 app.use('/indooritem', indoorItemController)
+app.use('/user', UserRouter)
 app.get("/", (req, res) => {
     res.render("outdooritem/Home", {})
 });

@@ -104,7 +104,7 @@ padding: 15px;
     border: white solid 1px;
   }
   .loginImg{
-    width: 120px;
+    width: 140px;
     height: 60px;
     margin-top: 25px;
     margin-bottom: -50px;
@@ -171,7 +171,8 @@ padding: 15px;
     /* min-width: 80%;  */
   }
   .outerContainer{
-    width: 75vw;
+    width: 100vw;
+    height: 10%;
   }
   .homeBackground{
     background-color: #f9f9f9;
@@ -319,7 +320,7 @@ align-items: center;
     width: 380px;
   }
   .copyright{
-    font-size: 12;
+    font-size: 12px;
   }
   .edit-outmost-wrapper{
     width: 100%;

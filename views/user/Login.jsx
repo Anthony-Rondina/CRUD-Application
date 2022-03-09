@@ -35,7 +35,7 @@ class Login extends React.Component {
           <p></p>
           <div className="newToAmazon">
               <hr />
-              <p class="newToAmazonP">New to Amazon?</p>
+              <p class="newToAmazonP">  New to Amazon?  </p>
               <hr />
             </div>
             <a class="btn btn-secondary" href="/user/signup">Create your Amazon account</a>

@@ -7,10 +7,19 @@ class Index extends React.Component {
             <DefaultLayout>
                 <div className="homeBackground">
                     <div className="outMost">
-                        <h1>Your Home page is working!</h1>
+                        <div className="upperOptions">
+                            <div className="card" style={{ width: 18 + "rem;" }}>
+                                <img className="card-img-top" src="..." alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Card title</h5>
+                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                            </div>
+                        </div>
                         <div
                             className='outerContainer'>
-                            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                            <div id="carouselExampleControls " className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
                                         <img className="d-block w-100" src="https://i.imgur.com/YSLU079.jpg" alt="First slide" />
