@@ -21,9 +21,9 @@ class Index extends React.Component {
                         <h2 className='results'> Displaying <span>{totalEntries(outdoorItem)}</span> results for "Outdoor Games"</h2>
                         <div className='relatedSearch'>
                             <span >Related search: </span>
-                            <a href="http://localhost:8000/indooritem">"Indoor Games"</a>
+                            <a href="/indooritem">"Indoor Games"</a>
                         </div>
-                        <a href="http://localhost:8000/outdoorItem/new" type="button" className="btn btn-primary indexbtn">Create Listing</a>
+                        <a href="/outdoorItem/new" type="button" className="btn btn-primary indexbtn">Create Listing</a>
                     </div>
                 </div>
                 <div className='indexOuterSplit'>
