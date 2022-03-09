@@ -24,7 +24,7 @@ class DefaultLayout extends React.Component {
                             <header>
                                 <div className="topHalf">
                                     <div className="top1">
-                                        <a className="amazonLogo bar" href="http://localhost:8000/"></a>
+                                        <a className="amazonLogo bar" href="/"></a>
                                         <div className="TopHalfItem2 bar">
                                             📍
                                             <div className="helloSelect">
@@ -39,7 +39,7 @@ class DefaultLayout extends React.Component {
                                             <button className="allButton">All</button>
                                         </div>
                                         <input type="text" placeholder="search" className="topInput" />
-                                        <a href="http://localhost:8000/outdooritem" className="magnifyingGlass">🔍</a>
+                                        <a href="/outdooritem" className="magnifyingGlass">🔍</a>
                                     </div>
                                     <div className="top3">
                                         <div className="topHalfItem4 bar">
