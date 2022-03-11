@@ -3,9 +3,9 @@ const DefaultLayout = require('../Default')
 
 class Show extends React.Component {
     render() {
-        const { outdoorItem } = this.props
+        const { outdoorItem, session } = this.props
         return (
-            <DefaultLayout>
+            <DefaultLayout session = {session}>
             <div className="showButtonDiv">
                 <div className="showButtonSmallDiv">
                     <a href="/outdooritem/"><button class="btn btn-primary">Back to Search Results</button></a>

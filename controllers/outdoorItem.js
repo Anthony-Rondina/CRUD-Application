@@ -4,15 +4,14 @@ const OutdoorItem = require("../models/outdooritem");
 // Create Router
 const router = express.Router();
 
-// Authorization Middleware
-router.use((req, res, next) => {
-    if (req.session.loggedIn) {
-      next();
-    } else {
-      res.redirect("/user/login");
-    }
-  });
 
+const authenticateUser = (req, res, next) => {
+    if (req.session.loggedIn) {
+        next();
+    } else {
+        res.redirect("/user/login");
+    }
+}
 ////////////////////////////////////////////
 // Routes
 ////////////////////////////////////////////
@@ -45,20 +44,28 @@ router.use((req, res, next) => {
 router.get('/', (req, res) => {
     OutdoorItem.find({})
         .then((outdoorItem) => {
-            res.render("outdooritem/Index", { outdoorItem })
+            res.render("outdooritem/Index", { outdoorItem, session: req.session })
         })
         .catch((error) => {
             res.status(400).json({ error })
         })
 })
 
+// Authorization Middleware
+// router.use((req, res, next) => {
+//     if (req.session.loggedIn) {
+//       next();
+//     } else {
+//       res.redirect("/user/login");
+//     }
+//   });
 // NEW ROUTE
-router.get("/new", (req, res) => {
-    res.render("outdooritem/New");
+router.get("/new", authenticateUser, (req, res) => {
+    res.render("outdooritem/New", { session: req.session });
 });
 
 // DELETE
-router.delete('/:id', (req, res) => {
+router.delete('/:id', authenticateUser, (req, res) => {
     const { id } = req.params;
     OutdoorItem.findByIdAndDelete(id)
         .then(() => {
@@ -70,7 +77,7 @@ router.delete('/:id', (req, res) => {
 })
 
 // UPDATE
-router.put('/:id', (req, res) => {
+router.put('/:id', authenticateUser, (req, res) => {
     const { id } = req.params;
     //New: true means it returns the NEW document with changes
     req.body.prime = req.body.prime === "on" ? true : false
@@ -84,7 +91,7 @@ router.put('/:id', (req, res) => {
 })
 
 // CREATE
-router.post("/", (req, res) => {
+router.post("/", authenticateUser, (req, res) => {
     // create the New saleItem
     req.body.prime = req.body.prime === "on" ? true : false
     OutdoorItem.create(req.body)
@@ -100,11 +107,11 @@ router.post("/", (req, res) => {
 });
 
 // EDIT
-router.get('/:id/edit', (req, res) => {
+router.get('/:id/edit', authenticateUser, (req, res) => {
     const { id } = req.params;
     OutdoorItem.findById(id)
         .then((outdoorItem) => {
-            res.render('outdooritem/Edit', { outdoorItem })
+            res.render('outdooritem/Edit', { outdoorItem, session: req.session })
         })
         .catch((error) => {
             res.send(400).json({ error })
@@ -121,7 +128,7 @@ router.get("/:id", (req, res) => {
     OutdoorItem.findById(id)
         .then((outdoorItem) => {
             // render the template with the data from the database
-            res.render("outdooritem/Show", { outdoorItem });
+            res.render("outdooritem/Show", { outdoorItem, session: req.session });
         })
         .catch((error) => {
             console.log(error);

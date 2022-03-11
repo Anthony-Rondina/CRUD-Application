@@ -3,8 +3,9 @@ const DefaultLayout = require('../Default')
 
 class Edit extends React.Component {
     render() {
+        const { session } = this.props
         return (
-            <DefaultLayout>
+            <DefaultLayout session = {session}>
                 <div className="edit-outmost-wrapper">
                     <div className="editOuterWrapper">
                         <form action="/indoorItem" method="post">

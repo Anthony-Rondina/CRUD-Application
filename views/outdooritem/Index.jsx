@@ -16,9 +16,9 @@ const totalEntries = (number) => {
 
 class Index extends React.Component {
     render() {
-        const { outdoorItem } = this.props
+        const { outdoorItem, session } = this.props
         return (
-            <DefaultLayout>
+            <DefaultLayout session = {session}>
                 <div className="resultsWrapper">
                     <div className="displayResults">
                         <h2 className='results'> Displaying <span>{totalEntries(outdoorItem)}</span> results for "Outdoor Games"</h2>

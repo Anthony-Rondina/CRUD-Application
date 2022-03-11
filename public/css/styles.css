@@ -24,6 +24,8 @@
     width: 100%;
     /* border: solid red 1px; */
   }
+ 
+  
   .signupOuterWraper{
     margin-top: 50px;
 padding: 15px;
@@ -170,22 +172,20 @@ padding: 15px;
     /* width: 100%; */
     /* min-width: 80%;  */
   }
-  .outerContainer{
-    width: 100vw;
-    height: 10%;
-  }
   .homeBackground{
     background-color: #f9f9f9;
+min-width: 100%;
+
   }
   /* .carousel-inner{
     height: 20vh !important;
   } */
-  .outMost{
-    display: flex;
+  
+  .upperOptions {
     flex-direction: column;
-    align-items: center;
+    display: flex;
     justify-content: center;
-
+    align-items: center;
   }
   .TopHalfItem2{
     color: white;
@@ -196,6 +196,18 @@ padding: 15px;
     justify-content: center;
     min-width: 150px;
     max-width: 150px;
+  }
+  .outerContainer {
+    width: 1000px !important;
+    position: relative;
+  }
+  .cardHolder{
+    margin-top: -250px;
+    display: flex;
+    width: 1070px;
+    justify-content: space-around;
+    position: relative;
+    /* border: solid red 2px; */
   }
   .indexOuterSplit{
     display: flex;
@@ -312,6 +324,7 @@ fieldset > label{
     border: 0;
     width: 100%;
   }
+ 
   .bottomInfo{
     font-size: 12px;
     display: flex;

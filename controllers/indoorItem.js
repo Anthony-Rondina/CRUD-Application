@@ -4,14 +4,6 @@ const indoorItem = require("../models/indooritem");
 // Create Router
 const router = express.Router();
 
-// Authorization Middleware
-router.use((req, res, next) => {
-    if (req.session.loggedIn) {
-      next();
-    } else {
-      res.redirect("/user/login");
-    }
-  });
 
 ////////////////////////////////////////////
 // Routes
@@ -45,20 +37,38 @@ router.use((req, res, next) => {
 router.get('/', (req, res) => {
     indoorItem.find({})
         .then((indoorItem) => {
-            res.render("indooritem/Index", { indoorItem })
+            res.render("indooritem/Index", { indoorItem, session: req.session })
         })
         .catch((error) => {
             res.status(400).json({ error })
         })
 })
 
+const authenticateUser = (req, res, next) => {
+    if (req.session.loggedIn) {
+        next();
+    } else {
+        res.redirect("/user/login");
+    }
+}
+// Authorization Middleware
+// router.use((req, res, next) => {
+//     if (req.session.loggedIn) {
+//       next();
+//     } else {
+//       res.redirect("/user/login");
+//     }
+//   });
+
+
 // NEW ROUTE
-router.get("/new", (req, res) => {
-    res.render("indooritem/New");
+router.get("/new", authenticateUser, (req, res) => {
+
+    res.render("indooritem/New", { session: req.session });
 });
 
 // DELETE
-router.delete('/:id', (req, res) => {
+router.delete('/:id', authenticateUser, (req, res) => {
     const { id } = req.params;
     indoorItem.findByIdAndDelete(id)
         .then(() => {
@@ -70,7 +80,7 @@ router.delete('/:id', (req, res) => {
 })
 
 // UPDATE
-router.put('/:id', (req, res) => {
+router.put('/:id', authenticateUser, (req, res) => {
     const { id } = req.params;
     //New: true means it returns the NEW document with changes
     // massage data
@@ -85,7 +95,7 @@ router.put('/:id', (req, res) => {
 })
 
 // CREATE
-router.post("/", (req, res) => {
+router.post("/", authenticateUser, (req, res) => {
     // create the New saleItem
     req.body.prime = req.body.prime === "on" ? true : false
     indoorItem.create(req.body)
@@ -101,11 +111,11 @@ router.post("/", (req, res) => {
 });
 
 // EDIT
-router.get('/:id/edit', (req, res) => {
+router.get('/:id/edit', authenticateUser, (req, res) => {
     const { id } = req.params;
     indoorItem.findById(id)
         .then((indoorItem) => {
-            res.render('indooritem/Edit', { indoorItem })
+            res.render('indooritem/Edit', { indoorItem, session: req.session })
         })
         .catch((error) => {
             res.send(400).json({ error })
@@ -122,7 +132,7 @@ router.get("/:id", (req, res) => {
     indoorItem.findById(id)
         .then((indoorItem) => {
             // render the template with the data from the database
-            res.render("indooritem/Show", { indoorItem });
+            res.render("indooritem/Show", { indoorItem, session: req.session });
         })
         .catch((error) => {
             console.log(error);

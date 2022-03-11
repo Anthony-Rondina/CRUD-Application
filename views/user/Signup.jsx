@@ -3,8 +3,9 @@ const DefaultLayout = require('../Default')
 
 class Signup extends React.Component {
     render() {
+        const { session } = this.props
         return (
-            <DefaultLayout>
+            <DefaultLayout session={session}>
                 <div className="signMainWrapper">
                     <img class="loginImg" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" alt="" />
                     <div class="signupOuterWraper">

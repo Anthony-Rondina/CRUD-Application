@@ -18,9 +18,9 @@ class Index extends React.Component {
         const countItem = () => {
             itemCount++
         }
-        const { indoorItem } = this.props
+        const { indoorItem, session } = this.props
         return (
-            <DefaultLayout>
+            <DefaultLayout session = {session}>
                 <div className="resultsWrapper">
                     <div className="displayResults">
                         <h2 className='results'> Displaying <span>{totalEntries(indoorItem)}</span> results for "Indoor Games"</h2>

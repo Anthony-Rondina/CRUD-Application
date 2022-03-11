@@ -1,7 +1,8 @@
 const React = require('react')
 class DefaultLayout extends React.Component {
     render() {
-        const { outdoorItem } = this.props // equal to const saleItem = this.props.saleItem
+        const { outdoorItem, session } = this.props // equal to const 
+
         return (
             <html lang='en'>
                 <head>
@@ -46,7 +47,7 @@ class DefaultLayout extends React.Component {
                                             <span className="flag">🇺🇸</span>
                                         </div>
                                         <div className="topHalfItem5 bar">
-                                            <a href="/user/login" className="hello2">Hello, Sign in</a>
+                                            <a href="/user/login" className="hello2">{`Hello, ${session.loggedIn ? session.username : " Sign in"}`}</a>
                                         </div>
                                         <div className="topHalfItem6 bar">
                                             <span className="returns">Returns</span>
@@ -72,7 +73,13 @@ class DefaultLayout extends React.Component {
                                         </ul>
 
                                     </div>
-                                    <a  href="/user/logout"><button class="btn btn-warning logoutButton">Logout</button></a>
+                                    {
+                                        session.loggedIn ?
+                                            <a href="/user/logout"><button class="btn btn-warning logoutButton">Logout</button></a>
+                                            :
+                                            ''
+                                    }
+
                                 </div>
                             </header>
                         </div>

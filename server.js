@@ -32,11 +32,12 @@ app.use(
         resave: false,
     })
 );
+
 app.use('/outdooritem', outdoorItemController)
 app.use('/indooritem', indoorItemController)
 app.use('/user', UserRouter)
 app.get("/", (req, res) => {
-    res.render("outdooritem/Home", {})
+    res.render("outdooritem/Home", {session: req.session})
 });
 //////////////////////////////////////////////
 // Server Listener

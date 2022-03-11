@@ -16,7 +16,7 @@ const router = express.Router();
 
 // The Signup Routes (Get => form, post => submit form)
 router.get("/signup", (req, res) => {
-    res.render("user/Signup.jsx");
+    res.render("user/Signup.jsx", { session: req.session});
 });
 
 router.post("/signup", async (req, res) => {
@@ -29,7 +29,7 @@ router.post("/signup", async (req, res) => {
     User.create(req.body)
       .then((user) => {
         // redirect to login page
-        res.redirect("/");
+        res.redirect("/user/login");
       })
       .catch((error) => {
         // send error as json
@@ -40,7 +40,7 @@ router.post("/signup", async (req, res) => {
 
 // The login Routes (Get => form, post => submit form)
 router.get("/login", (req, res) => {
-    res.render("user/Login.jsx");
+    res.render("user/Login.jsx", {session: req.session});
 });
 
 

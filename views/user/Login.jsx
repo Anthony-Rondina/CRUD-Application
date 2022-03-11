@@ -3,10 +3,11 @@ const DefaultLayout = require('../Default')
 
 class Login extends React.Component {
   render() {
+    const { session } = this.props
     return (
-      <DefaultLayout>
+      <DefaultLayout session = {session}>
         <div className="signMainWrapper">
-        <img class="loginImg" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" alt="" />
+          <img class="loginImg" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" alt="" />
           <div class="signupOuterWraper">
             <div className="userTopText">
               <h2>Sign-In</h2></div>
@@ -30,15 +31,15 @@ class Login extends React.Component {
               <a href="">Privacy Notice.</a>
             </div>
             <p></p>
-           
+
           </div>
           <p></p>
           <div className="newToAmazon">
-              <hr />
-              <p class="newToAmazonP">  New to Amazon?  </p>
-              <hr />
-            </div>
-            <a class="btn btn-secondary" href="/user/signup">Create your Amazon account</a>
+            <hr />
+            <p class="newToAmazonP">  New to Amazon?  </p>
+            <hr />
+          </div>
+          <a class="btn btn-secondary" href="/user/signup">Create your Amazon account</a>
           <p></p>
           <hr />
           <div className="bottomInfo">
