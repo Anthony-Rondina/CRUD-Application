@@ -38,7 +38,7 @@ padding: 15px;
     align-items: center;
   }
   body { 
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100vw;
     min-height: inherit; 
     margin: 0; 
@@ -50,7 +50,7 @@ padding: 15px;
     flex-direction: column;
     height: 130px;
     max-height: 130px;
-    width: 100vw;
+    width: 99.6vw;
   }
   .showMainWrapper{
     margin-top: 25px;
@@ -118,9 +118,11 @@ padding: 15px;
     background-image: url(https://pngimg.com/uploads/amazon/amazon_PNG11.png);
     background-repeat: no-repeat;
     max-width: 130px;
-    width: 130px;
+    width: 110px;
+    margin-left: 20px;
+    margin-top: 5px;
     height: 50px;
-    background-size: 130px;
+    background-size: 110px;
   }
   .results{
     /* border: solid blue 1px; */
