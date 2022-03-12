@@ -107,14 +107,14 @@ class DefaultLayout extends React.Component {
                                     <div className="row2Links">
                                         <span >Make money with us</span>
                                         <ul>
-                                            <li>Careers</li>
-                                            <li>Blog</li>
-                                            <li>About Amazon</li>
-                                            <li>Sustainability</li>
-                                            <li>Press Center</li>
-                                            <li>Investor Relations</li>
-                                            <li>Amazon Devices</li>
-                                            <li>Amazon Science</li>
+                                            <li>Sell products on Amazon</li>
+                                            <li>Sell apps on Amazon</li>
+                                            <li>Become an Affiliate</li>
+                                            <li>Become a Delivery Driver</li>
+                                            <li>Start a Delivery Buisness</li>
+                                            <li>Advertise Your Products</li>
+                                            <li>Self-Publish with Us</li>
+                                            <li>Host an Amazon Hub</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -122,14 +122,14 @@ class DefaultLayout extends React.Component {
                                     <div className="row3Links">
                                         <span >Amazon Payment Products</span>
                                         <ul>
-                                            <li>Careers</li>
-                                            <li>Blog</li>
-                                            <li>About Amazon</li>
-                                            <li>Sustainability</li>
-                                            <li>Press Center</li>
-                                            <li>Investor Relations</li>
-                                            <li>Amazon Devices</li>
-                                            <li>Amazon Science</li>
+                                            <li>Amazon Rewards Visa Signature Cards</li>
+                                            <li>Amazon.com Store Card</li>
+                                            <li>Amazon Secured Card</li>
+                                            <li>Amazon Buisness Card</li>
+                                            <li>Amazon Buisness Line of Credit</li>
+                                            <li>Shop with Points</li>
+                                            <li>Credit Card Marketplace</li>
+                                            <li>Reload Your Balance</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -137,14 +137,14 @@ class DefaultLayout extends React.Component {
                                     <div className="row4Links">
                                         <span >Let us help you</span>
                                         <ul>
-                                            <li>Careers</li>
-                                            <li>Blog</li>
-                                            <li>About Amazon</li>
-                                            <li>Sustainability</li>
-                                            <li>Press Center</li>
-                                            <li>Investor Relations</li>
-                                            <li>Amazon Devices</li>
-                                            <li>Amazon Science</li>
+                                            <li>Your Account</li>
+                                            <li>Your Orders</li>
+                                            <li>Shipping Rates & Policies</li>
+                                            <li>Amazon Prime</li>
+                                            <li>Returns & Replacements</li>
+                                            <li>Manage Your Content and Devices</li>
+                                            <li>Amazon Assistant</li>
+                                            <li>Help</li>
                                         </ul>
                                     </div>
                                 </div>
