@@ -43,7 +43,7 @@ class Index extends React.Component {
                                     </div>
                                 </div>
                                 <div className="card" style={{ width: 18 + "rem;" }}>
-                                    <img className="card-img-top" src="https://flyingcdn-942385.b-cdn.net/wp-content/uploads/2020/09/Mens-Fall-Fashion-new-banner2.jpg" alt="Card image cap" />
+                                    <img className="card-img-top" src="https://www.toweinsurance.com/images/news/40590/10810/large/Two_men_with_a_grill.jpg" alt="Card image cap" />
                                     <div className="card-body">
                                         <h5 className="card-title">Card title</h5>
                                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

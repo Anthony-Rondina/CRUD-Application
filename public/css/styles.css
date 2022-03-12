@@ -143,6 +143,7 @@ padding: 15px;
   .indexbtn{
     width: 150px !important;
     min-width: 150px !important;
+    margin-right: 40px;
   }
   .indexRightSplit{
     padding: 15px;
@@ -538,11 +539,10 @@ white-space: nowrap;
     color: white;
   }
   .logoutButton{
-    margin-right: 25px;
+    margin-right: 40px;
   }
   .bottom-half-box{
     width: 100%;
-    
     overflow: hidden !important;
   }
   .bottom-half-box > ul > li {
