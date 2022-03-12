@@ -8,7 +8,7 @@ HTML | CSS | Javascript | Express | Mongoose | React
 
 ## Usage
 
-Launch by clicking: [This Link](https://dashboard.heroku.com/apps/anthony-amazon-crud-app)
+Launch by clicking: [This Link](https://anthony-amazon-crud-app.herokuapp.com)
 
 To simulate a search click the magnifying glass icon to search for items listed as "Outdoor"
 
