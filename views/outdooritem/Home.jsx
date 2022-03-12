@@ -5,7 +5,7 @@ class Index extends React.Component {
     render() {
         const { session } = this.props
         return (
-            <DefaultLayout session = {session}>
+            <DefaultLayout session={session}>
                 <div className="homeBackground">
                     <div className="outMost">
                         <div className="upperOptions">
@@ -34,29 +34,42 @@ class Index extends React.Component {
                                 </div>
                             </div>
                             <div className="cardHolder">
-                                <div className="card" style={{ width: 18 + "rem;" }}>
-                                    <img className="card-img-top" src="https://media.npr.org/assets/img/2020/07/04/gettyimages-1212201194-4ec3c82a40a41644543a69d931a6140a8a939c35-s1200-c85.webp" alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Shop Games</a>
+                                <div class="innerCard1">
+                                    <div className="cardAnchor">
+                                        <h3>Mind Bending Puzzles</h3></div>
+
+                                    <img src="https://media.npr.org/assets/img/2020/07/04/gettyimages-1212201194-4ec3c82a40a41644543a69d931a6140a8a939c35-s1200-c85.webp" alt="" />
+                                    <p></p>
+                                    <div class="cardAnchor">
+
+                                        <a href="">Shop Deals</a>
                                     </div>
+
                                 </div>
-                                <div className="card" style={{ width: 18 + "rem;" }}>
-                                    <img className="card-img-top" src="https://www.toweinsurance.com/images/news/40590/10810/large/Two_men_with_a_grill.jpg" alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Shop Fashion</a>
+                                <div class="innerCard1">
+                                    <div className="cardAnchor">
+                                        <h3>Get Ready for Summer</h3></div>
+
+                                    <img src="https://www.toweinsurance.com/images/news/40590/10810/large/Two_men_with_a_grill.jpg
+" alt="" />
+                                    <p></p>
+                                    <div class="cardAnchor">
+
+                                        <a href="">Get Connected</a>
                                     </div>
+
                                 </div>
-                                <div className="card" style={{ width: 18 + "rem;" }}>
-                                    <img className="card-img-top" src="https://nationaltoday.com/wp-content/uploads/2020/02/national-clean-out-your-computer-day.jpg" alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Shop Electronics</a>
+                                <div class="innerCard1">
+                                    <div className="cardAnchor">
+                                        <h3>Technology Center</h3></div>
+
+                                    <img src="https://nationaltoday.com/wp-content/uploads/2020/02/national-clean-out-your-computer-day.jpg" alt="" />
+                                    <p></p>
+                                    <div class="cardAnchor">
+
+                                        <a href="">Learn More</a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
