@@ -5,9 +5,10 @@ class Edit extends React.Component {
     render() {
         const { session } = this.props
         return (
-            <DefaultLayout session = {session}>
+            <DefaultLayout session={session}>
                 <div className="edit-outmost-wrapper">
                     <div className="editOuterWrapper">
+                        <h2>Create Item Listing:</h2>
                         <form action="/outdoorItem" method="post">
                             <fieldset>
                                 <div className="editName">

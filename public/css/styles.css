@@ -11,6 +11,7 @@
   html { 
     /* overflow: hidden !important; */
     min-height: 100%; 
+    width: 100vw;
   } 
   .signMainWrapper{
     display: flex;
@@ -402,6 +403,12 @@ align-items: center;
     color: white;
     background-color: grey;
     width: 50%;
+  }
+  .hello2{
+    color: white;
+  }
+  .hello2:hover{
+    color: rgb(131, 210, 237);
   }
   .helloSelect > span {
     text-align: left;

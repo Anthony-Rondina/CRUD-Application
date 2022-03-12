@@ -8,6 +8,7 @@ class Edit extends React.Component {
             <DefaultLayout session = {session}>
                 <div className="edit-outmost-wrapper">
                     <div className="editOuterWrapper">
+                        <h2>Create Item Listing:</h2>
                         <form action="/indoorItem" method="post">
                             <fieldset>
                                 <div className="editName">
