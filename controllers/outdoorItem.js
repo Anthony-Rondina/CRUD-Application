@@ -10,7 +10,7 @@ const authenticateUser = (req, res, next) => {
         next();
     } else {
         res.redirect("/user/login");
-    }
+    } 
 }
 ////////////////////////////////////////////
 // Routes

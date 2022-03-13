@@ -29,7 +29,8 @@ router.post("/signup", async (req, res) => {
     User.create(req.body)
       .then((user) => {
         // redirect to login page
-        res.redirect("/user/login");
+            res.redirect("/user/success");
+        
       })
       .catch((error) => {
         // send error as json
@@ -42,8 +43,6 @@ router.post("/signup", async (req, res) => {
 router.get("/login", (req, res) => {
     res.render("user/Login.jsx", {session: req.session});
 });
-
-
 
 //Signup post response
 router.post("/login", async (req, res) => {
@@ -84,6 +83,10 @@ router.get("/logout", (req, res) => {
     req.session.destroy((err) => {
         res.redirect("/");
     });
+});
+
+router.get("/success", (req, res) => {
+    res.render("user/Successful.jsx", {session: req.session});
 });
 //////////////////////////////////////////
 // Export the Router
