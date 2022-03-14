@@ -1,19 +1,22 @@
+const res = require('express/lib/response');
 const React = require('react');
 const DefaultLayout = require('../Default')
 
 class Login extends React.Component {
     render() {
-        const { session } = this.props
+        const { session, user } = this.props
+        console.log(user)
         return (
             <DefaultLayout session={session}>
                 <div className="signMainWrapper">
-                    <img class="loginImg" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" alt="" />
-                    <div class="signupOuterWraper">
+                    <img className="loginImg" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" alt="" />
+                    <div className="signupOuterWraper">
                         <div className="userTopText">
-                            <h2>Sign-up Successful!</h2></div>
+                            <h2>Sign-up Successful!</h2>
+                        </div>
                         <div className="terms2">
                             <p></p>
-                            <a class="btn btn-secondary" href="/user/login">Go to Login</a>
+                            <a className="btn btn-secondary" href="/user/login">Go to Login</a>
                             <p></p>
                             <div className="terms3">
                                 <a href="">Conditions of Use</a>
@@ -24,7 +27,6 @@ class Login extends React.Component {
                         <p></p>
                     </div>
                     <p></p>
-
                     <p></p>
                     <hr />
                     <div className="bottomInfo">

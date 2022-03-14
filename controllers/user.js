@@ -16,32 +16,32 @@ const router = express.Router();
 
 // The Signup Routes (Get => form, post => submit form)
 router.get("/signup", (req, res) => {
-    res.render("user/Signup.jsx", { session: req.session});
+    res.render("user/Signup.jsx", { session: req.session });
 });
 
 router.post("/signup", async (req, res) => {
     // encrypt password
     req.body.password = await bcrypt.hash(
-      req.body.password,
-      await bcrypt.genSalt(10)
+        req.body.password,
+        await bcrypt.genSalt(10)
     );
     // create the New user
     User.create(req.body)
-      .then((user) => {
-        // redirect to login page
-            res.redirect("/user/success");
-        
-      })
-      .catch((error) => {
-        // send error as json
-        console.log(error);
-        res.json({ error });
-      });
-  });
+        .then((user) => {
+            // redirect to login page
+            res.render("user/Successful", { user, session: req.session });
+
+        })
+        .catch((error) => {
+            // send error as json
+            console.log(error);
+            res.json({ error });
+        });
+});
 
 // The login Routes (Get => form, post => submit form)
 router.get("/login", (req, res) => {
-    res.render("user/Login.jsx", {session: req.session});
+    res.render("user/Login.jsx", { session: req.session });
 });
 
 //Signup post response
@@ -86,7 +86,7 @@ router.get("/logout", (req, res) => {
 });
 
 router.get("/success", (req, res) => {
-    res.render("user/Successful.jsx", {session: req.session});
+    res.render("user/Successful.jsx", { session: req.session })
 });
 //////////////////////////////////////////
 // Export the Router
