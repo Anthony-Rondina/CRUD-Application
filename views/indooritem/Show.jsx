@@ -28,6 +28,9 @@ class Show extends React.Component {
                                 <span class="price">{` $${indoorItem.price}`}</span>
                             </div>
                             <br />
+                            <p></p>
+                            <p className="aboutItem">About this Item:</p>
+                            <p></p>
                             <p>{`${indoorItem.description}`}</p>
 
                         </div>
